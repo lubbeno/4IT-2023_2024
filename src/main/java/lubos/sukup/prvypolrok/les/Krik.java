@@ -33,4 +33,9 @@ public class Krik implements SpolocnyInterface{
                 ", nazov='" + nazov + '\'' +
                 '}';
     }
+
+    @Override
+    public void akoRastie() {
+        System.out.println("rastie ako krik");
+    }
 }

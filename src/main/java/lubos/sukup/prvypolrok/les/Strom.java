@@ -28,6 +28,11 @@ public class Strom implements SpolocnyInterface{
         return nazov;
     }
 
+    @Override
+    public void akoRastie() {
+        System.out.println("rastie ako strom");
+    }
+
     public void setVyska(int vyska) {
         this.vyska = vyska;
     }
