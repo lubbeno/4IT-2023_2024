@@ -9,8 +9,5 @@
         <module name="IT4-2023-2304" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="IT4-2023-2304" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
