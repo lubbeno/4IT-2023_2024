@@ -14,18 +14,16 @@ public class MyConnection {
         Statement stmt;
 
         Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
         stmt = conn.createStatement();
-
         ResultSet rs
                 = stmt.executeQuery("SELECT * FROM UZIVATELIA"); // Execute query
+        while (rs.next()){
+            UzivateliaDTO uzivateliaDTO = new UzivateliaDTO(rs.getInt("ID"), rs.getString("MENO"),
+                    rs.getString("PRIEZVISKO"), rs.getString("ADRESA"));
 
+            System.out.println(uzivateliaDTO); // Print result
+        }
 
-        rs.next();
-        String name
-                = rs.getString("ID"); // Retrieve name from db
-
-        System.out.println(name); // Print result on console
         stmt.close(); // close statement
         conn.close(); // close connection
 
