@@ -1,0 +1,13 @@
+2023-12-14 08:56:09.505851+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Method is only allowed for a query. Use execute or executeUpdate instead of executeQuery; SQL statement:
+INSERT INTO  UZIVATELIA(ID,MENO,PRIEZVISKO,ADRESA)VALUES(4,'STVRTE MENO','STVRTE PRIEZVISKO', 'STVRTA ADRESA') [90002-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.command.Prepared.query(Prepared.java:256)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:252)
+	at org.h2.command.Command.executeQuery(Command.java:192)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:101)
+	at lubos.sukup.it420232304/lubos.sukup.prvypolrok.jdbc.MyConnectionInsert.main(MyConnectionInsert.java:21)
