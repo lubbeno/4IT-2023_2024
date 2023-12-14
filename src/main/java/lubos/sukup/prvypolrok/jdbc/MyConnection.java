@@ -8,7 +8,7 @@ public class MyConnection {
     public static void main(String[] args) throws SQLException {
 
 
-        String DB_URL = "jdbc:h2:C:/Users/LubosSukup/JAVA/skola/3IT-2022-2023-GUI/notes/mydb";
+        String DB_URL = "jdbc:h2:C:/Users/lubos/PRACA/JAVA/skola/IT4-2023-2024/notes/mydb";
         String USER = "sa";
         String PASS = "sa";
         Statement stmt;
